@@ -32,18 +32,24 @@ const blogsSchema = mongoose.Schema(
             type: String,
             validate: [validator.isEmail, "Please provide an Email"],
         },
-        like_count: {
-            type: Number,
-        },
-        dislike_count: {
-            type: Number,
-        },
+        like_count: [
+            {
+                type: String,
+                validate: [validator.isEmail, "Please provide an Email"],
+            },
+        ],
+        dislike_count: [
+            {
+                type: String,
+                validate: [validator.isEmail, "Please provide an Email"],
+            },
+        ],
         comments: [
             {
                 name: {
                     unique: [true, "Name must be unique"],
                     type: String,
-                    required: [true, "Name is required"],
+                    // required: [true, "Name is required"],
                 },
 
                 email: {
@@ -55,7 +61,7 @@ const blogsSchema = mongoose.Schema(
                 },
                 img: {
                     type: String,
-                    required: [true, "img is required"],
+                    // required: [true, "img is required"],
                     validate: [validator.isURL, "Please provide an URL"],
                 },
                 createdAt: {
