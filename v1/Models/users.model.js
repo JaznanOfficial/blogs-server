@@ -17,16 +17,16 @@ const usersSchema = mongoose.Schema(
             type: String,
             validate: [validator.isURL, "Please provide an URL"],
         },
-        
+
         role: {
             // required: true,
+            default: "user",
             type: String,
             enum: {
                 values: ["admin", "moderator", "user"],
                 message: "{VALUE} is wrong. must be admin/moderator/user",
             },
         },
-        
     },
     {
         timestamps: true,
