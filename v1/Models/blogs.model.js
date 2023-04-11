@@ -8,9 +8,14 @@ const blogsSchema = mongoose.Schema(
             type: String,
             required: [true, "Name is required"],
         },
+        author: {
+            type: String,
+            required: [true, "Name is required"],
+        },
+
         img: {
             type: String,
-            required: [true, "trailer_video is required"],
+            required: [true, "img is required"],
             // unique: [true, "Email must be unique"],
             validate: [validator.isURL, "Please provide an URL"],
         },
@@ -35,13 +40,28 @@ const blogsSchema = mongoose.Schema(
         },
         comments: [
             {
+                name: {
+                    unique: [true, "Name must be unique"],
+                    type: String,
+                    required: [true, "Name is required"],
+                },
+
                 email: {
                     type: String,
                     validate: [validator.isEmail, "Please provide an Email"],
                 },
                 comment: {
-                    type: String
-                }
+                    type: String,
+                },
+                img: {
+                    type: String,
+                    required: [true, "img is required"],
+                    validate: [validator.isURL, "Please provide an URL"],
+                },
+                createdAt: {
+                    type: Date,
+                    default: Date.now(),
+                },
             },
         ],
     },
