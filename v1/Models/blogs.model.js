@@ -23,10 +23,12 @@ const blogsSchema = mongoose.Schema(
             required: true,
             type: String,
         },
-        category: {
-            required: true,
-            type: String,
-        },
+        category: [
+            {
+                required: true,
+                type: String,
+            },
+        ],
         email: {
             required: true,
             type: String,
