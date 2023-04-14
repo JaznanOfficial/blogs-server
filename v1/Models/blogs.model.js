@@ -34,20 +34,18 @@ const blogsSchema = mongoose.Schema(
             type: String,
             validate: [validator.isEmail, "Please provide an Email"],
         },
-        like_count: [
-            {
-                type: Number,
-                default: 0,
-                // validate: [validator.isEmail, "Please provide an Email"],
-            },
-        ],
-        dislike_count: [
-            {
-                type: Number,
-                default: 0,
-                // validate: [validator.isEmail, "Please provide an Email"],
-            },
-        ],
+        like_count: {
+            type: Number,
+            default: 0,
+            // validate: [validator.isEmail, "Please provide an Email"],
+        },
+
+        dislike_count: {
+            type: Number,
+            default: 0,
+            // validate: [validator.isEmail, "Please provide an Email"],
+        },
+
         comments: [
             {
                 name: {
