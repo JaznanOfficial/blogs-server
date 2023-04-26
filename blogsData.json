@@ -1,17 +1,3 @@
-[
-    {
-        "name": "Bangladesh",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/125px-Flag_of_Bangladesh.svg.png",
-        "email": "jaznanofficial@gmail.com",
-        "post": "Bangladesh (/ˌbæŋɡləˈdɛʃ, ˌbɑːŋ-/;[15] Bengali: বাংলাদেশ, pronounced [ˈbaŋlaˌdeʃ] (listen)) (bung-la-desh), officially the People's Republic of Bangladesh, is a country in South Asia. It is the eighth-most populous country in the world, with a population exceeding 165 million people in an area of 148,460 square kilometres (57,320 sq mi).[10] Bangladesh is among the most densely populated countries in the world, and shares land borders with India to the west, north, and east, and Myanmar to the southeast; to the south it has a coastline along the Bay of Bengal. It is narrowly separated from Bhutan and Nepal by the Siliguri Corridor; and from China by the Indian state of Sikkim in the north. Bangladesh is a parliamentary democracy, where the Prime Minister is the Head of State and the President is a ceremonial figure. Dhaka, the capital and largest city, is the nation's political, financial and cultural centre. Chittagong, the second-largest city, is the busiest port on the Bay of Bengal. The official language is Bengali, one of the easternmost branches of the Indo-European language family.",
-        "category": "sports",
-        "like_count": 10,
-        "dislike_count": 2,
-        "comments": [
-            {
-                "email": "jaznanofficial@gmail.com",
-                "comment": "This is super cool blog. also am testing"
-            }
-        ]
-    }
-]
+{
+    "dislike_count":"jaznanofficial@gmail.com"
+  }
