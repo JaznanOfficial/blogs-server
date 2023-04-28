@@ -1,8 +1,19 @@
 const Blogs = require("../Models/blogs.model");
 
 const getBlogsService = async (query) => {
-    const result = await Blogs.find(query);
-    console.log(result);
+    let result;
+    console.log(query);
+    if (query?.toDate && query?.fromDate) {
+        result = Blogs.find({
+            createdAt: {
+                $gte: new Date(query?.fromDate),
+                $lte: new Date(query?.toDate),
+            },
+        });
+    } else {
+        result = await Blogs.find(query);
+    }
+    // console.log(result);
     return result;
 };
 const postBlogsService = async (data) => {
