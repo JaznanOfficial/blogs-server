@@ -38,7 +38,7 @@ const blogsSchema = mongoose.Schema(
             {
                 // type: Number,
                 // default: 0,
-                unique: true,
+                // unique: true,
                 type: String,
                 validate: [validator.isEmail, "Please provide an Email"],
             }
@@ -48,7 +48,7 @@ const blogsSchema = mongoose.Schema(
             {
                 // type: Number,
                 // default: 0,
-                unique: true,
+                // unique: true,
                 type: String,
                 validate: [validator.isEmail, "Please provide an Email"],
             },
@@ -57,7 +57,7 @@ const blogsSchema = mongoose.Schema(
         comments: [
             {
                 name: {
-                    unique: [true, "Name must be unique"],
+                    // unique: [true, "Name must be unique"],
                     type: String,
                     // required: [true, "Name is required"],
                 },
