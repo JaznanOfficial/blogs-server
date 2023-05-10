@@ -22,6 +22,9 @@ dependencies:
   nodemon:
     specifier: ^2.0.21
     version: 2.0.21
+  stripe:
+    specifier: ^12.4.0
+    version: 12.4.0
   validator:
     specifier: ^13.9.0
     version: 13.9.0
@@ -759,6 +762,14 @@ packages:
   /statuses@2.0.1:
     resolution: {integrity: sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==}
     engines: {node: '>= 0.8'}
+    dev: false
+
+  /stripe@12.4.0:
+    resolution: {integrity: sha512-QjZRzKi3wf8TsuJf/fd6/ejfPgwNptDIzFogRWaRzP3oMJnSD73I2YxR0Eje5zfrU8FmddYWZYawoUejqN+o1w==}
+    engines: {node: '>=12.*'}
+    dependencies:
+      '@types/node': 18.16.1
+      qs: 6.11.0
     dev: false
 
   /supports-color@5.5.0:
