@@ -39,8 +39,8 @@ app.post("/create-payment-page", async (req, res) => {
                 },
             ],
             mode: "payment",
-            success_url: "http://localhost:3000/payment-success",
-            cancel_url: "http://localhost:3000/",
+            success_url: "https://dream-shop-client.vercel.app/payment-success",
+            cancel_url: "https://dream-shop-client.vercel.app/",
         });
 
         res.send({
